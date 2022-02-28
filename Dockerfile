@@ -4,7 +4,7 @@ ARG DEBIAN_FRONTEND=noninteractive
 
 # install texlive
 RUN apt-get update && \
-    apt-get -y install --no-install-recommends pandoc texlive-full biber latexmk make git procps locales curl && \
+    apt-get -y install --no-install-recommends pandoc texlive-full texlive-science biber latexmk make git procps locales curl && \
     rm -rf /var/lib/apt/lists/*
 
 # generating locales
